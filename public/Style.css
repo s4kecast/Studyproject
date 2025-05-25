@@ -1,0 +1,78 @@
+/* in TaskCRUD sind Hintergrundfaren manuell gesetzt  */
+
+:root {
+    --primary-color: #002060;
+    --secondary-color: #002e83;
+    --hover-color: #4fcfff;
+    --primary-text: white;
+}
+
+:root header{
+    background-color: var(--primary-color);
+}
+
+:root main {
+    padding: 1% 2%;
+    flex: 1;
+}
+
+:root footer {
+    background-color: var(--primary-color);
+    position: relative;
+    bottom: 0;
+    white-space: nowrap;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.nav-pills .nav-link.active {
+    background-color: var(--secondary-color) !important;
+}
+
+@media (max-width: 991px) {
+    .nav-pills .nav-link {
+        padding-left: 0.5em;
+        padding-right: 0.5em;
+    }
+    .nav-item {
+        display: flex;
+        align-items: center;
+    }
+}
+
+.navbar .nav-link {
+    color: var(--primary-text);
+    font-size: 1.5em;
+}
+ .navbar .nav-link:hover {
+     color: var(--hover-color);
+ }
+
+.card-header {
+    border-bottom: 1px solid lightgray;
+}
+
+.footer-text {
+    color: white;
+}
+
+.footer-link {
+    color: white;
+}
+
+.footer-link:hover {
+    color: var(--hover-color);
+}
+
+.fa-symbols:hover {
+    color: var(--hover-color);
+}
+
+.vertical-line {
+    border-right: 0.19em solid var(--primary-text);
+    height: 3.8em;
+}
